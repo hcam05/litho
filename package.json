@@ -1,0 +1,53 @@
+{
+  "name": "hilton",
+  "version": "1.0.0",
+  "description": "Reservation system challenge",
+  "main": "server.js",
+  "scripts": {
+    "build": "yarn run clean && yarn run webpack --env.dev",
+    "build:prod": "webpack --env.prod -p",
+    "clean": "rimraf www/assets",
+    "start": "nodemon server/server.js --exec babel-node --ignore app",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "webpack": "webpack --colors --display-error-details --config ./webpack.config.js"
+  },
+  "author": "hcam",
+  "license": "MIT",
+  "dependencies": {
+    "apollo-boost": "^0.1.4",
+    "apollo-client": "^2.2.8",
+    "apollo-server-express": "^1.3.4",
+    "express": "^4.16.3",
+    "graphql": "^0.13.2",
+    "graphql-tag": "^2.8.0",
+    "graphql-tools": "^2.24.0",
+    "memory-cache": "^0.2.0",
+    "mongoose": "^5.0.14",
+    "mongoose-auto-increment": "^5.0.1",
+    "nodemon": "^1.17.3",
+    "react": "^16.3.1",
+    "react-apollo": "^2.1.3",
+    "react-dom": "^16.3.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "babel-preset-react-hmre": "^1.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^22.4.3",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.20.3",
+    "webpack": "^3.10.0",
+    "webpack-dev-middleware": "^2.0.6",
+    "webpack-hot-middleware": "^2.21.2"
+  }
+}
