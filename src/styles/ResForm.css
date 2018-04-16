@@ -1,0 +1,49 @@
+.res-form{
+  margin: 0px auto;
+  width: 50%;
+}
+
+.res-form-fields{
+  display: flex;
+  flex-direction: row;
+  margin: 8px;
+}
+
+input {
+  flex: 2; /* Expands Input Field to fit remaining space */
+}
+
+select {
+  flex: 2; /* Expands Select Field to fit remaining space */
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+#arrivalDate:hover {
+  cursor: pointer;
+}
+
+#departureDate:hover {
+  cursor: pointer;
+}
+
+.button-container{
+  display: flex;
+  flex-direction: row-reverse; /* Moves button to right side */
+}
+
+.button {
+  font-size: 14px;
+  background-color: #26A65B;
+  padding: 5px 5px 5px 5px;  
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.button:hover{
+  background-color: #CF000F;
+  color: white;
+}
