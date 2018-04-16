@@ -14,7 +14,7 @@ A Simple reservation recording system.
 * GET /reservations - returns list of all reservations
 * POST /reservation - save a reservation
 * GET /reservations/ID - return reservation object by ID
-* GET /reservations?hotelName=X&arrivalDate=Y&departureDate=Z – Returns all reservations that match
+* GET /reservations?hotelName=X&arrivalDate=Y&departureDate=Z – Returns all reservations that match (date format should be YY-MM-DD)
 
 ### User Interface
 
